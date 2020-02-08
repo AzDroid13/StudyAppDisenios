@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scenes.create_new.subjects.SubjectsFragment">
+
+    <ViewStub
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/tall_toolbar_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="34dp">
+
+            <EditText
+                android:id="@+id/subjectNameEditText"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:ems="10"
+                android:fontFamily="@font/calibri_regular"
+                android:hint="@string/name_subject_hint"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/colorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="16dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text="@string/color"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/selectColorGreenButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subjectNameEditText"
+                tools:textAlignment="center" />
+
+            <Button
+                android:id="@+id/selectColorRedButton"
+                android:tag="1"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/rounded_subject_color1"
+                app:layout_constraintEnd_toStartOf="@+id/selectColorOrangeButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/colorTextView" />
+
+            <Button
+                android:id="@+id/selectColorOrangeButton"
+                android:tag="2"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/rounded_subject_color2"
+                app:layout_constraintEnd_toStartOf="@+id/selectColorYellowButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/selectColorRedButton"
+                app:layout_constraintTop_toBottomOf="@+id/colorTextView" />
+
+            <Button
+                android:id="@+id/selectColorYellowButton"
+                android:tag="3"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/rounded_subject_color3"
+                app:layout_constraintEnd_toStartOf="@+id/selectColorGreenButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/selectColorOrangeButton"
+                app:layout_constraintTop_toBottomOf="@+id/colorTextView" />
+
+            <Button
+                android:id="@+id/selectColorGreenButton"
+                android:tag="4"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/rounded_subject_color4"
+                app:layout_constraintEnd_toStartOf="@+id/selectColorTurquoiseLightButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/selectColorYellowButton"
+                app:layout_constraintTop_toBottomOf="@+id/colorTextView" />
+
+            <Button
+                android:id="@+id/selectColorTurquoiseLightButton"
+                android:tag="5"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/rounded_subject_color5"
+                app:layout_constraintEnd_toStartOf="@+id/selectColorPurpleButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/selectColorGreenButton"
+                app:layout_constraintTop_toTopOf="@+id/selectColorGreenButton" />
+
+            <Button
+                android:id="@+id/selectColorPurpleButton"
+                android:tag="6"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/rounded_subject_color6"
+                app:layout_constraintEnd_toStartOf="@+id/selectColorVioletButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/selectColorTurquoiseLightButton"
+                app:layout_constraintTop_toTopOf="@+id/selectColorGreenButton" />
+
+            <Button
+                android:id="@+id/selectColorVioletButton"
+                android:tag="7"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/rounded_subject_color7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/selectColorPurpleButton"
+                app:layout_constraintTop_toTopOf="@+id/selectColorGreenButton" />
+
+            <Switch
+                android:id="@+id/accessModifierSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/red"
+                android:trackTint="@color/green"
+                app:layout_constraintBottom_toTopOf="@+id/createSubject"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toEndOf="@+id/textView19"
+                app:layout_constraintTop_toBottomOf="@+id/selectColorRedButton" />
+
+            <Button
+                android:id="@+id/createSubject"
+                android:layout_width="279dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="180dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/rounded_subject_color1"
+                android:text="@string/create_button"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="normal|bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/selectColorRedButton"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:text="@string/share_followers_switch"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/createSubject"
+                app:layout_constraintStart_toStartOf="@+id/selectColorRedButton"
+                app:layout_constraintTop_toBottomOf="@+id/selectColorRedButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

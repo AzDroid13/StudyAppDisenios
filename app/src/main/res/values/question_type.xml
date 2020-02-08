@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="question_types_array">
+        <item>Select a type of question</item>
+        <item>ABC</item>
+        <item>True or False</item>
+        <item>Exact</item>
+    </string-array>
+</resources>

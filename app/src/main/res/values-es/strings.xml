@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">424801901719498</string>
+    <string name="fb_login_protocol_scheme">fb424801901719498</string>
+
+    <string name="app_name">StudyApp</string>
+    <string name="register">Registrarse</string>
+    <string name="login">Acceder</string>
+    <string name="password_hint">Clave de acceso</string>
+    <string name="username_hint">Nombre usuario</string>
+    <string name="sign_up_button_text">Registrar me</string>
+    <string name="confirm_password_hint">Repetir clave nuevamente</string>
+    <string name="email_address_hint">Escribe tu Correo</string>
+    <string name="country_hint">Selecciona tu país</string>
+
+    <string name="profile_nav_menu">Perfil</string>
+    <string name="economy_title">Economia</string>
+    <string name="calculus_title">Calculo</string>
+    <string name="administration_title">Administración</string>
+    <string name="profile_hint">Perfil</string>
+    <string name="without_results">Sin paquetes asociados.</string>
+
+    <string name="next_button">Siguiente</string>
+    <string name="cancel">Cancelar</string>
+    <string name="package_name_hint">Nombre del Paquete</string>
+    <string name="package_creation_title">Creación de Paquetes</string>
+    <string name="package_type_holder">Tipo de Paquete</string>
+    <string name="package_description_hint">Descripcion</string>
+    <string name="pay_button">Pago</string>
+    <string name="free_button">Gratis</string>
+    <string name="public_button">Público</string>
+    <string name="private_button">Privado</string>
+    <string name="select_category">Seleccionar Categoría</string>
+    <string name="how_much_hint">¿ Cuanto ?</string>
+    <string name="true_false_question">Verdadero / Falso</string>
+    <string name="white_your_hint">Agrega una pregunta</string>
+    <string name="false_button">Falso</string>
+    <string name="true_button">Verdadero</string>
+    <string name="back_button">Atras</string>
+    <string name="answer">Respuesta</string>
+    <string name="add_an_answer">Agrega una respuesta</string>
+    <string name="questionEntity">Pregunta</string>
+    <string name="finish">Finalizar</string>
+    <string name="complete_info_message">Informacion incompleta</string>
+    <string name="repeated_name">Ya asignaste este nombre a otro paquete de estudio, ponle un nombre diferente</string>
+    <string name="your_packages">Tus Packetes</string>
+    <string name="file_upload_success">Paquete creado.!</string>
+    <string name="correct_answer">Respuesta Correcta</string>
+    <string name="incorrect_answer">Respuesta Correcta</string>
+    <string name="add_another_answer_button">Agregar otra respuesta</string>
+    <string name="remove_question_confirmation">¿Esta seguro de borrar esta pregunta?</string>
+    <string name="cancel_confirmation_button">CANCEL</string>
+    <string name="yes_confirmation_button">ELIMINAR</string>
+    <string name="accept_button">ACEPTAR</string>
+    <string name="more_than_4_answer">Te recomendamos únicamente 4 posibles respuestas, igual puedes crear las que quieras</string>
+    <string name="logout">Cerrar sessión</string>
+    <string name="create_button">Crear</string>
+    <string name="check_button">Verificar</string>
+    <string name="wrong_button">Error</string>
+    <string name="unclear_button">Confusa</string>
+
+    <string name="registration_write_name">Escribe tu nombre</string>
+    <string name="registration_write_country">Escribe tu País</string>
+    <string name="registration_student">Estudiante</string>
+    <string name="registration_teacher">Profesor</string>
+    <string name="let_go_button">Vamos!</string>
+    <string name="registration_confirm_password">Repite la clave</string>
+    <string name="registration_password">Clave de Acceso</string>
+    <string name="registration_write_username">Nombre de Usuario</string>
+    <string name="name_find_you">Con este nombre las personas te encontraran en el appp</string>
+    <string name="no_questions_found">Paquete sin preguntas</string>
+    <string name="complete_button">Completar</string>
+    <string name="explication">Explicación (Opcional)</string>
+    <string name="add_explication_optional_hint">Añade una explicación</string>
+    <string name="question">Question #</string>
+    <string name="QA">Q/A</string>
+    <string name="packages">Packages</string>
+
+    <!-- Fragment Subjects -->
+    <string name="name_subject_hint">Nombre asignaturas</string>
+    <string name="color">Color</string>
+    <string name="create_subjects">crear asignaturas</string>
+    <string name="package_name">Paquete</string>
+    <string name="guest">Invitados</string>
+    <string name="QandA"><![CDATA[Q&A]]></string>
+    <string name="subjects_title">Subjects</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="add_packages">Add packages</string>
+    <string name="share_followers_switch">Share with followers</string>
+    <string name="home">Home</string>
+    <string name="list">list</string>
+    <string name="statistics">statistics</string>
+    <string name="my_packages">My Packages</string>
+    <string name="hello_blank_fragment">Hola</string>
+
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".scenes.register.RegistrationCountryFragment">
+
+    <ScrollView
+        android:layout_width="393dp"
+        android:layout_height="434dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/MyProgressBarTwo"
+                android:layout_width="0dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:progressDrawable="@drawable/horizonatlprogress"
+                android:progressTint="@color/float_green"
+                android:theme="@style/MyProgressBarTwo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/countryEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/shadow"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:hint="@string/registration_write_country"
+                android:inputType="textCapSentences"
+                android:minHeight="50dp"
+                android:paddingStart="20sp"
+                android:paddingEnd="20sp"
+                android:textAlignment="center"
+                android:textColor="@color/darkGray"
+                android:textColorHint="@color/khaky"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+            <Button
+                android:id="@+id/nextButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="32dp"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                android:text="@string/next_button"
+                android:textAllCaps="false"
+                android:textColor="@color/turquoise"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/countryEditText"
+                app:layout_constraintStart_toStartOf="@+id/countryEditText"
+                app:layout_constraintTop_toBottomOf="@+id/countryEditText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

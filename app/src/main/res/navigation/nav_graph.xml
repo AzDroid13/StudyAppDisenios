@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main_board_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="alejandro.ibague.studyapp.scenes.login.LoginFragment"
+        android:label="activity_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/to_registerNewAccountsActivity"
+            app:destination="@id/registration_graph"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainBoardFragment"
+            app:destination="@id/main_board_fragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/login_fragment"
+            app:popUpToInclusive="true">
+            <argument
+                android:name="user_identifier"
+                app:argType="string"  />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/main_board_fragment"
+        android:name="alejandro.ibague.studyapp.scenes.board.MainBoardFragment"
+        android:label="fragment_main_board"
+        tools:layout="@layout/fragment_main_board" >
+        <action
+            android:id="@+id/action_main_board_fragment_to_questionCreatorFragment"
+            app:destination="@id/questionContainerFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left">
+            <argument
+                android:name="questionList"
+                app:nullable="true"
+                android:defaultValue="@null"
+                app:argType="alejandro.ibague.studyapp.models.QuestionEntityList" />
+        </action>
+        <action
+            android:id="@+id/action_main_board_fragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_main_board_fragment_to_questionInboxFragment"
+            app:destination="@id/questionInboxFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_main_board_fragment_to_quizContainerFragment"
+            app:destination="@id/quizContainerFragment" />
+        <action
+            android:id="@+id/action_main_board_fragment_to_SubjectFragment"
+            app:destination="@id/subjectsFragment" />
+    </fragment>
+
+    <navigation android:id="@+id/registration_graph"
+        app:startDestination="@id/registrationEmailFragment">
+        <fragment
+            android:id="@+id/registrationNameFragment"
+            android:name="alejandro.ibague.studyapp.scenes.register.RegistrationNameFragment"
+            android:label="fragment_registration_name"
+            tools:layout="@layout/fragment_registration_name" >
+            <argument
+                android:name="userInformation"
+                app:nullable="true"
+                android:defaultValue="@null"
+                app:argType="alejandro.ibague.studyapp.database.entities.UserEntity" />
+            <action
+                android:id="@+id/action_registrationNameFragment_to_registrationUserNameFragment"
+                app:destination="@id/registrationUserNameFragment" >
+                <argument
+                    android:name="userInformation"
+                    app:nullable="true"
+                    android:defaultValue="@null"
+                    app:argType="alejandro.ibague.studyapp.database.entities.UserEntity" />
+            </action>
+        </fragment>
+        <fragment
+            android:id="@+id/registrationUserNameFragment"
+            android:name="alejandro.ibague.studyapp.scenes.register.RegistrationUserNameFragment"
+            android:label="fragment_registration_username"
+            tools:layout="@layout/fragment_registration_username" >
+            <argument
+                android:name="userInformation"
+                app:nullable="true"
+                android:defaultValue="@null"
+                app:argType="alejandro.ibague.studyapp.database.entities.UserEntity" />
+            <action
+                android:id="@+id/action_registrationUserNameFragment_to_registrationCountryFragment"
+                app:destination="@id/registrationCountryFragment" >
+                <argument
+                    android:name="userInformation"
+                    app:nullable="true"
+                    android:defaultValue="@null"
+                    app:argType="alejandro.ibague.studyapp.database.entities.UserEntity" />
+            </action>
+        </fragment>
+        <fragment
+            android:id="@+id/registrationCountryFragment"
+            android:name="alejandro.ibague.studyapp.scenes.register.RegistrationCountryFragment"
+            android:label="fragment_registration_country"
+            tools:layout="@layout/fragment_registration_country" >
+            <argument
+                android:name="userInformation"
+                app:nullable="true"
+                android:defaultValue="@null"
+                app:argType="alejandro.ibague.studyapp.database.entities.UserEntity" />
+            <action
+                android:id="@+id/action_registrationCountryFragment_to_registrationRolFragment"
+                app:destination="@id/registrationRolFragment" >
+                <argument
+                    android:name="userInformation"
+                    app:nullable="true"
+                    android:defaultValue="@null"
+                    app:argType="alejandro.ibague.studyapp.database.entities.UserEntity" />
+            </action>
+        </fragment>
+        <fragment
+            android:id="@+id/registrationRolFragment"
+            android:name="alejandro.ibague.studyapp.scenes.register.RegistrationRolFragment"
+            android:label="fragment_registration_rol"
+            tools:layout="@layout/fragment_registration_rol" >
+            <argument
+                android:name="userInformation"
+                app:nullable="true"
+                android:defaultValue="@null"
+                app:argType="alejandro.ibague.studyapp.database.entities.UserEntity" />
+            <action
+                android:id="@+id/action_registrationRolFragment_to_registrationPasswordFragment"
+                app:destination="@id/registrationPasswordFragment" >
+                <argument
+                    android:name="userInformation"
+                    app:nullable="true"
+                    android:defaultValue="@null"
+                    app:argType="alejandro.ibague.studyapp.database.entities.UserEntity" />
+            </action>
+        </fragment>
+        <fragment
+            android:id="@+id/registrationPasswordFragment"
+            android:name="alejandro.ibague.studyapp.scenes.register.RegistrationPasswordFragment"
+            android:label="fragment_registration_password"
+            tools:layout="@layout/fragment_registration_password" >
+            <argument
+                android:name="userInformation"
+                app:nullable="true"
+                android:defaultValue="@null"
+                app:argType="alejandro.ibague.studyapp.database.entities.UserEntity" />
+            <action
+                android:id="@+id/action_newAccountFragment_to_mainBoardFragment"
+                app:destination="@id/main_board_fragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"/>
+        </fragment>
+        <fragment
+            android:id="@+id/registrationEmailFragment"
+            android:name="alejandro.ibague.studyapp.scenes.register.RegistrationEmailFragment"
+            android:label="RegistrationEmailFragment" >
+            <action
+                android:id="@+id/action_registrationEmailFragment_to_registrationNameFragment"
+                app:destination="@id/registrationNameFragment" >
+                <argument
+                    android:name="userInformation"
+                    app:nullable="true"
+                    android:defaultValue="@null"
+                    app:argType="alejandro.ibague.studyapp.database.entities.UserEntity" />
+            </action>
+        </fragment>
+    </navigation>
+
+    <fragment
+        android:id="@+id/packageCreatorFragment"
+        android:name="alejandro.ibague.studyapp.scenes.create_new.packages.PackageCreatorFragment"
+        android:label="fragment_package_creator"
+        tools:layout="@layout/fragment_package_creator" >
+        <action
+            android:id="@+id/action_packageCreatorFragment_to_main_board_fragment"
+            app:destination="@id/main_board_fragment"
+            app:popUpTo="@id/main_board_fragment"/>
+        <action
+            android:id="@+id/action_packageCreatorFragment_to_questionInboxFragment"
+            app:destination="@id/questionInboxFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionInboxFragment"
+        android:name="alejandro.ibague.studyapp.scenes.question_inbox.QuestionInboxFragment"
+        android:label="fragment_question_inbox"
+        tools:layout="@layout/fragment_question_inbox" >
+        <action
+            android:id="@+id/action_questionInboxFragment_to_main_board_fragment"
+            app:destination="@id/main_board_fragment"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_questionInboxFragment_to_questionContainerFragment"
+            app:destination="@id/questionContainerFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/questionContainerFragment"
+        android:name="alejandro.ibague.studyapp.scenes.create_new.questions.QuestionContainerFragment"
+        android:label="fragment_question_container"
+        tools:layout="@layout/fragment_question_container" >
+        <argument
+            android:name="questionList"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="alejandro.ibague.studyapp.models.QuestionEntityList" />
+        <action
+            android:id="@+id/action_questionContainerFragment_to_packageCreatorFragment"
+            app:destination="@id/packageCreatorFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/packageCreatorFragment"/>
+        <action
+            android:id="@+id/action_questionContainerFragment_to_questionInboxFragment"
+            app:destination="@id/questionInboxFragment" />
+        <action
+            android:id="@+id/action_questionContainerFragment_to_main_board_fragment"
+            app:destination="@id/main_board_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="alejandro.ibague.studyapp.scenes.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/quizContainerFragment"
+        android:name="alejandro.ibague.studyapp.scenes.answers.QuizContainerFragment"
+        android:label="fragment_quiz_container"
+        tools:layout="@layout/fragment_quiz_container" >
+        <action
+            android:id="@+id/action_quizContainerFragment_to_questionInboxFragment"
+            app:destination="@id/questionInboxFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/main_board_fragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/subjectsFragment"
+        android:name="alejandro.ibague.studyapp.scenes.create_new.subjects.SubjectsFragment"
+        android:label="fragment_subjects"
+        tools:layout="@layout/fragment_subjects">
+        <action
+            android:id="@+id/action_subjects_fragment_to_Subject_detailFragment"
+            app:destination="@id/subjectsDetailFragment"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popUpTo="@id/packageCreatorFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/subjectsDetailFragment"
+        android:name="alejandro.ibague.studyapp.scenes.create_new.subjects.SubjectsDetailFragment"
+        android:label="fragment_subjects_detail"
+        tools:layout="@layout/fragment_subjects_detail">
+    </fragment>
+
+</navigation>

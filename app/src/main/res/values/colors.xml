@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1A7970</color>
+    <color name="colorPrimaryDark">#1A7970</color>
+    <color name="colorAccent">#1A7970</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#B2D3D2D2</color>
+    <color name="darkGray">#616161</color>
+    <color name="aqua">#209489</color>
+    <color name="olive">#307a37</color>
+    <color name="green_main">#006D68</color>
+    <color name="khaky">#B4B4B4</color>
+    <color name="khaky_light">#E6E6E6</color>
+    <color name="green">#49D834</color>
+    <color name="float_green">#00BB30</color>
+    <color name="black">#000000</color>
+    <color name="turquoise">#1D6661</color>
+
+    <!--Colors Subjects-->
+    <color name="blue_dark">#6a509a</color>
+    <color name="blue">#2e87ff</color>
+    <color name="red">#f02445</color>
+    <color name="green_light">#07ec4b</color>
+    <color name="violet">#92007c</color>
+    <color name="orange">#ff7e20</color>
+    <color name ="fuchsia">#e4007b</color>
+
+    <!--Color font-->
+
+    <color name="palid_orange">#97FF7E20</color>
+    <color name="gray_pale">#b1b1b1</color>
+
+</resources>
+

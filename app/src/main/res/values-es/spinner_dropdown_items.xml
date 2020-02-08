@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subject_array">
+        <item>Administración</item>
+        <item>Administración Pública</item>
+        <item>Arquitectura</item>
+        <item>Arte</item>
+        <item>Arte y Bellas Artes</item>
+        <item>Biología</item>
+        <item>Calidad</item>
+        <item>Ciencias Biologicas</item>
+        <item>Ciencias Políticas</item>
+        <item>Ciencias Sociales y Humanidades</item>
+        <item>Computacion</item>
+        <item>Contabilidad</item>
+        <item>Cultura general</item>
+        <item>Ecologia y medio ambiente</item>
+        <item>Economía</item>
+        <item>Español</item>
+        <item>Física</item>
+        <item>Geografía</item>
+        <item>geología</item>
+        <item>Historia</item>
+        <item>Informática y tecnologia</item>
+        <item>Inglés</item>
+        <item>Lenguajes</item>
+        <item>Ley y leyes</item>
+        <item>Literatura</item>
+        <item>Matemáticas</item>
+        <item>Moda y diseño</item>
+        <item>Música</item>
+        <item>Negocios</item>
+        <item>Nutrición y comida</item>
+        <item>Periodismo</item>
+        <item>Psicología</item>
+        <item>Química</item>
+        <item>Salud y Medicina</item>
+        <item>Veterinaria</item>
+    </string-array>
+</resources>

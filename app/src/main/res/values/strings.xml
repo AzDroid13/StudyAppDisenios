@@ -1,0 +1,119 @@
+<resources>
+    <string name="facebook_app_id">424801901719498</string>
+    <string name="fb_login_protocol_scheme">fb424801901719498</string>
+
+    <string name="app_name">StudyApp</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="password_hint">Password</string>
+    <string name="username_hint">Username</string>
+    <string name="sign_up_button_text">Sign Up</string>
+    <string name="confirm_password_hint">Repeat password again</string>
+    <string name="email_address_hint">Write your Email</string>
+    <string name="country_hint">Select your country</string>
+    <string name="profile_nav_menu">Profile</string>
+
+    <string name="economy_title">Economy</string>
+    <string name="calculus_title">Calculus</string>
+    <string name="administration_title">Administration</string>
+    <string name="profile_hint">Profile</string>
+    <string name="without_results">No package founds.</string>
+
+
+    <string name="next_button">Next</string>
+    <string name="cancel">Cancel</string>
+    <string name="package_name_hint">Package Name</string>
+    <string name="package_creation_title">Create Package</string>
+    <string name="package_type_holder">Package Type</string>
+    <string name="package_description_hint">Description</string>
+    <string name="pay_button">Payment</string>
+    <string name="free_button">Free</string>
+    <string name="public_button">Public</string>
+    <string name="private_button">Private</string>
+    <string name="select_category">Select Category</string>
+    <string name="how_much_hint">¿ How much ?</string>
+    <string name="true_false_question">True / False</string>
+    <string name="white_your_hint">Add a question</string>
+    <string name="false_button">False</string>
+    <string name="true_button">True</string>
+    <string name="back_button">Back</string>
+    <string name="add_an_answer">Add an answer</string>
+
+    <string name="questionEntity">Question</string>
+    <string name="s_t_u_d_y" translatable="false">S t u d y</string>
+    <string name="creator" translatable="false">CREATOR</string>
+    <string name="editor" translatable="false">EDITOR</string>
+    <string name="finish">Finish</string>
+    <string name="complete_info_message">Information incomplete</string>
+    <string name="profile" translatable="false">PROFILE</string>
+    <string name="your_packages">Your Packages</string>
+
+    <string name="file_upload_success">File uploaded successful</string>
+    <string name="repeated_name">You have already assigned this name to another study package, give it a different name</string>
+
+    <string name="default_floatingview_channel_id" translatable="false">default_floatingview_channel</string>
+    <string name="default_floatingview_channel_name" translatable="false">Default Channel</string>
+    <string name="correct_answer">Correct Answer</string>
+    <string name="incorrect_answer">Incorrect Answer</string>
+    <string name="add_another_answer_button">Add another answer</string>
+    <string name="remove_question_confirmation">Are you sure to delete this question?</string>
+    <string name="cancel_confirmation_button">CANCEL</string>
+    <string name="yes_confirmation_button">REMOVE</string>
+    <string name="accept_button">ACCEPT</string>
+    <string name="more_than_4_answer">We recommend only 4 possible answers, you can still create the ones you want</string>
+    <string name="logout">Log out</string>
+    <string name="create_button">Create</string>
+    <string name="answer">Answer</string>
+    <string name="quiz" translatable="false">Quiz</string>
+    <string name="check_button">Check</string>
+    <string name="unclear_button">Unclear</string>
+    <string name="wrong_button">Wrong</string>
+    <string name="packages">Packages</string>
+
+    <string name="registration_write_name">Write your Name</string>
+    <string name="registration_write_country">Write your Country</string>
+    <string name="registration_student">Student</string>
+    <string name="registration_teacher">Teacher</string>
+    <string name="let_go_button">Lets go!</string>
+    <string name="registration_confirm_password">Repeat Password</string>
+    <string name="registration_password">Password</string>
+    <string name="registration_write_username">User Name</string>
+    <string name="name_find_you">With this name people will find you in the app</string>
+    <string name="no_questions_found">Package without questions</string>
+    <string name="complete_button">Complete</string>
+    <string name="explication">Explication (Optional)</string>
+    <string name="add_explication_optional_hint">Add an Explication</string>
+    <string name="question">Pregunta #</string>
+
+    <!-- Fragment Subjects -->
+    <string name="name_subject_hint">Subject Name</string>
+    <string name="color">Color</string>
+    <string name="create_subjects">Create subjects</string>
+    <string name="package_name">Paquete</string>
+    <string name="guest">Guest</string>
+    <string name="QandA"><![CDATA[Q&A]]></string>
+    <string name="QA">Q/A</string>
+    <string name="subjects_title">Asignaturas</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="add_packages">Add packages</string>
+    <string name="share_followers_switch">Share with followers</string>
+    <string name="home">Home</string>
+    <string name="list">List</string>
+    <string name="statistics">Statistics</string>
+    <string name="my_packages">My Packages</string>
+
+    <!--Content Description-->
+    <string name="oneStar" translatable="false">OneStar</string>
+    <string name="twoStars" translatable="false">twoStars</string>
+    <string name="threeStars" translatable="false">threeStars</string>
+    <string name="fourStars" translatable="false">fourStars</string>
+    <string name="fiveStars" translatable="false">fiveStars</string>
+    <string name="dot" translatable="false">dot</string>
+    <string name="iconPerson" translatable="false">iconPerson</string>
+    <string name="iconSelected" translatable="false">iconSelected</string>
+    <string name="iconFinish" translatable="false">iconFinish</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

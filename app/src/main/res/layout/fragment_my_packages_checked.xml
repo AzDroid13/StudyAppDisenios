@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scenes.question_inbox.QuestionInboxFragment">
+
+    <TextView
+        android:id="@+id/myPackageTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="@string/my_packages"
+        android:textColor="@color/green_main"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/selectedSubjectsAndPackagesRecyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selectedSubjectsAndPackagesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainSearchView" />
+
+    <SearchView
+        android:id="@+id/mainSearchView"
+        android:layout_width="286dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/shadow"
+        android:iconifiedByDefault="false"
+        android:layoutDirection="rtl"
+        android:queryHint="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="13dp"
+        android:layout_height="14dp"
+        android:src="@drawable/ic_dot_tab_selected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myPackageTitleTextView"
+        android:contentDescription="@string/dot"/>
+
+    <ImageView
+        android:id="@+id/finishImageView"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/finish"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

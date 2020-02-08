@@ -1,0 +1,155 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="99dp"
+    android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
+    android:backgroundColor="#000000"><![CDATA[
+
+
+
+
+
+       "
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/vertical_dots"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
+
+
+        ]]>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/calibri_regular"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/firstStatImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextViewEdits"
+            tools:text=" Do you know how interest rates work?" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/calibri_regular"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:maxLines="2"
+            android:textAlignment="viewStart"
+            android:textColor="@color/darkGray"
+            android:textSize="14,65sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/accessModifierSwitch"
+            tools:ignore="SmallSp,TextViewEdits"
+            tools:text="Dr. Moskovits G." />
+
+        <ImageView
+            android:id="@+id/firstStatImageView"
+            android:layout_width="20"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/fithStatImageView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/star_filled"
+            android:contentDescription="@string/oneStar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/menuDotsImageView"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignTop=""
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.079"
+            app:srcCompat="@drawable/vertical_dots" />
+
+        <ImageView
+            android:id="@+id/secondStatImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/star_empty"
+            android:contentDescription="@string/twoStars"
+            app:layout_constraintBottom_toBottomOf="@+id/descriptionTextView"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintStart_toEndOf="@+id/firstStatImageView"
+            app:layout_constraintTop_toTopOf="@+id/firstStatImageView" />
+
+        <ImageView
+            android:id="@+id/thirdStatImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/secondStatImageView"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/star_empty"
+            android:contentDescription="@string/threeStars"
+            app:layout_constraintBottom_toBottomOf="@+id/secondStatImageView"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintStart_toEndOf="@+id/secondStatImageView"
+            app:layout_constraintTop_toTopOf="@+id/secondStatImageView" />
+
+        <ImageView
+            android:id="@+id/fourthStatImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/fithStatImageView"
+            android:background="@drawable/star_empty"
+            android:contentDescription="@string/fourStars"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintStart_toEndOf="@+id/thirdStatImageView"
+            app:layout_constraintTop_toTopOf="@+id/thirdStatImageView" />
+
+        <ImageView
+            android:id="@+id/fithStatImageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/secondStatImageView"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/star_empty"
+            android:contentDescription="@string/fiveStars"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintStart_toEndOf="@+id/fourthStatImageView"
+            app:layout_constraintTop_toTopOf="@+id/fourthStatImageView" />
+
+        <Switch
+            android:id="@+id/accessModifierSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:thumbTint="#38E354"
+            android:trackTint="#84FF9C"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menuDotsImageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
